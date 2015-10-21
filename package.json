@@ -1,10 +1,10 @@
 {
-  "name": "tuitionpool",
+  "name": "templateking",
   "version": "1.0.0",
-  "description": "tuition pool",
+  "description": "template king",
   "main": "index.js",
   "bin": {
-    "tuitionpool": "bin/cmd.js"
+    "templateking": "bin/cmd.js"
   },
   "scripts": {
     "start": "bin/cmd.js",
@@ -12,18 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bloodyKnuckles/tuitionpool.git"
+    "url": "git://github.com/bloodyKnuckles/templateking.git"
   },
   "keywords": [
-    "continuing",
-    "education",
-    "app",
-    "teachers"
+    "template",
+    "layered",
   ],
   "bugs": {
-    "url": "https://github.com/bloodyKnuckles/tuitionpool/issues"
+    "url": "https://github.com/bloodyKnuckles/templateking/issues"
   },
-  "homepage": "https://github.com/bloodyKnuckles/tuitionpool#readme",
+  "homepage": "https://github.com/bloodyKnuckles/templateking#readme",
   "dependencies": {
     "body": "^5.1.0",
     "ecstatic": "^1.0.0",
