@@ -8,6 +8,7 @@ var fs = require('fs')
 var hstream = require('hyperstream')
 var xtend = require('xtend')
 var createElement = require('virtual-dom/create-element')
+var str = require('string-to-stream')
 
 inherits(Server, EventEmitter)
 module.exports = Server
@@ -40,6 +41,7 @@ function ltemplates (templates) {
 }
 
 function procpgvars (pgvars) {
+    pgvars = pgvars || {}
     Object.keys(pgvars).forEach(function (key) {
         pgvars[key] = 'string' === typeof pgvars[key]? pgvars[key]: createElement(pgvars[key]).toString()
     })
@@ -47,7 +49,7 @@ function procpgvars (pgvars) {
 }
 
 function vdorfile (template) {
-    return 'string' === typeof template? read(template): createElement(template).toString()
+    return 'string' === typeof template? read(template): str(createElement(template).toString())
 }
 
 function read (file) {
