@@ -3,7 +3,6 @@ var http = require('http')
 var ecstatic = require('ecstatic')(__dirname + '/public')
 
 http.createServer(function (request, response) {
-    //ecstatic({ root: __dirname + '/public', handleError: false })
     if ( request.url === '/' ) {
         var message = 'Hello template!'
         templates(
