@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/bloodyKnuckles/templateking#readme",
   "dependencies": {
-    "hyperstream": "^1.2.2",
+    "hyperstream": "git+https://github.com/bloodyKnuckles/hyperstream.git",
     "string-to-stream": "^1.0.1",
     "virtual-dom": "^2.1.1"
   },

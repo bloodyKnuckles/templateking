@@ -11,6 +11,25 @@ http.createServer(function (request, response) {
             response
         )
     }
+    else if ( request.url === '/section' ) {
+        var message = 'Hello section!'
+        templates(
+            ['main.html', 'section.html', 'message.html'],
+            {
+                'head': {_mapappend: {
+                    'link': [{'link':{href:'/css/section.css'}}]
+                }},
+                '#sectionheader': 'Section!', '#message': message, '#datetime': Date(),
+                '#scripts': {_mapprepend: {
+                    'script': [
+                        {'script':{src:undefined, _html:'console.log("message loaded")'}},
+                        {'script':{src:'/js/section.js'}}
+                    ]
+                }}
+            },
+            response
+        )
+    }
     else { ecstatic(request, response) }
 }).listen(8000)
 
