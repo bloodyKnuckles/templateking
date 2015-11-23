@@ -1,6 +1,7 @@
 var templates = require('../')({directory: 'examples/public'})
 var http = require('http')
 var ecstatic = require('ecstatic')(__dirname + '/public')
+var hscript = require('virtual-dom/h')
 
 http.createServer(function (request, response) {
     if ( request.url === '/' ) {
@@ -8,6 +9,13 @@ http.createServer(function (request, response) {
         templates(
             ['main.html', 'message.html'],
             {'#message': message, '#datetime': Date()},
+            response
+        )
+    }
+    else if ( request.url === '/welcome' ) {
+        templates(
+            ['main.html', hscript('span', 'Welcome!')],
+            {},
             response
         )
     }
