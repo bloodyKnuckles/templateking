@@ -6,7 +6,7 @@ var str = require('string-to-stream')
 
 module.exports = function (opts) {
     opts = opts || {}
-    opts.directory = opts.directory || 'public'
+    opts.directory = opts.directory || './'
     
     return function (templates, pagevars, response) {
     looptemplates(templates)
