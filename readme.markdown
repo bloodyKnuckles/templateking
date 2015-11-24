@@ -7,7 +7,7 @@ data will be inserted. The benefit is that the templates can be developed indepe
 program that dynamically inserts data into the web page.
 
 It also provides for layering templates so you can have one template for the entire site that is
-used on every page, one template for each section that is used throughout it's own seciton, one 
+used on every page, one template for each section that is used throughout it's own section, one 
 template for each sub-section used on each page in it's particular sub-seciton, and one template 
 for each page. 
 
@@ -26,7 +26,7 @@ content of the elements in the templates that are identified by the correspondin
 
 ``` js
 // require the module and identify the directory that contains the template files
-var templates = require('templateking')({directory: 'examples/public'}) 
+var templates = require('templateking')({directory: 'public'}) 
 
 templates(
 
