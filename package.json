@@ -1,6 +1,6 @@
 {
   "name": "templateking",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Nested templates that use CSS selectors to populate dynamic data points.",
   "main": "index.js",
   "repository": {
