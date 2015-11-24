@@ -25,19 +25,59 @@ content of the elements in the templates that are identified by the correspondin
 ## example
 
 ``` js
-// identify the directory that contains the template files
-var templates = require('../')({directory: 'examples/public'}) 
+// require the module and identify the directory that contains the template files
+var templates = require('templateking')({directory: 'examples/public'}) 
 
 templates(
+
     // list the nested templates, starting with outer to inner
     ['simple.html', 'message.html'], 
-    
 
     // provide an object of CSS selector keys with values to replace the default template text
-    {'title': 'My New Title', '#message': 'Hello templateking!', '#datetime': Date()}, 
+    {
+        'title':     'My New Title', 
+        '#message':  'Hello templateking!', 
+        '#datetime': Date()
+    }, 
 
     // provide a writeable stream to pipe the resulting HTML text to
     process.stdout 
 )
 ```
 
+Given the templates:
+
+simple.html
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>templateking</title>
+  </head>
+  <body>
+    <div class="template">template</div>
+  </body>
+</html>
+```
+
+and message.html
+```
+    <h3 id="message">Message</h3>
+    <div>Date/Time: <span id="datetime">datetime</span></div>
+```
+
+Will output:
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My New Title</title>
+  </head>
+  <body>
+    <div class="template">
+        <h3 id="message">Hello templateking!</h3>
+        <div>Date/Time: <span id="datetime">Tue Nov 24 2015 12:51:23 GMT-0600 (CST)</span></div>
+    </div>
+  </body>
+</html>
+```
