@@ -25,12 +25,12 @@ content of the elements in the templates that are identified by the correspondin
 ## example
 
 ``` js
-var templates = require('../')({directory: 'examples/public'})
+var templates = require('../')({directory: 'examples/public'}) // identify the directory that contains the template files
 
 templates(
-    ['simple.html', 'message.html'],
-    {'title': 'My New Title', '#message': 'Hello templateking!', '#datetime': Date()},
-    process.stdout
+    ['simple.html', 'message.html'], // list the nested templates, starting with outer to inner
+    {'title': 'My New Title', '#message': 'Hello templateking!', '#datetime': Date()}, // provide an object of CSS selector keys with values to replace the default template text
+    process.stdout // a writeable stream to pipe the resulting HTML text to
 )
 ```
 

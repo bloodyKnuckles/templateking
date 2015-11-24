@@ -1,7 +1,7 @@
 {
   "name": "templateking",
-  "version": "1.0.0",
-  "description": "template king",
+  "version": "0.1.0",
+  "description": "Nested templates that use CSS selectors to populate dynamic data points.",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -9,7 +9,10 @@
   },
   "keywords": [
     "template",
-    "layered"
+    "layered",
+    "nested",
+    "CSS",
+    "selectors"
   ],
   "bugs": {
     "url": "https://github.com/bloodyKnuckles/templateking/issues"
