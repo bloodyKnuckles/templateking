@@ -39,7 +39,7 @@ module.exports = function (opts) {
     }
 
     function read (file) {
-        return fs.createReadStream(path.join(__dirname, opts.directory, file))
+        return fs.createReadStream(path.join(opts.directory, file))
     }
 }
 
