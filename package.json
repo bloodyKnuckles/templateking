@@ -18,6 +18,7 @@
     "url": "https://github.com/bloodyKnuckles/templateking/issues"
   },
   "homepage": "https://github.com/bloodyKnuckles/templateking#readme",
+  "license": "MIT",
   "dependencies": {
     "hyperstream": "git+https://github.com/bloodyKnuckles/hyperstream.git",
     "string-to-stream": "^1.0.1",
