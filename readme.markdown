@@ -85,3 +85,7 @@ Will output:
 See [the examples directory](https://github.com/bloodyKnuckles/templateking/tree/master/examples)
 for more examples and additional functionality.
 
+## license
+
+MIT
+
