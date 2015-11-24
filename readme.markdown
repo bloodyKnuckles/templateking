@@ -22,7 +22,7 @@ identifies CSS selectors as key names paired with dynamic data values and replac
 content of the elements in the templates that are identified by the corresponding CSS selectors.
 
 --- 
-## example
+## simple example
 
 ``` js
 // require the module and identify the directory that contains the template files
@@ -60,7 +60,7 @@ simple.html
 </html>
 ```
 
-and message.html
+And message.html
 ```
     <h3 id="message">Message</h3>
     <div>Date/Time: <span id="datetime">datetime</span></div>
@@ -70,14 +70,14 @@ Will output:
 ```
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My New Title</title>
-  </head>
-  <body>
-    <div class="template">
-        <h3 id="message">Hello templateking!</h3>
-        <div>Date/Time: <span id="datetime">Tue Nov 24 2015 12:51:23 GMT-0600 (CST)</span></div>
-    </div>
-  </body>
+    <head>
+        <title>My New Title</title>
+    </head>
+    <body>
+        <div class="template">
+            <h3 id="message">Hello templateking!</h3>
+            <div>Date/Time: <span id="datetime">Tue Nov 24 2015 12:51:23 GMT-0600 (CST)</span></div>
+        </div>
+    </body>
 </html>
 ```
