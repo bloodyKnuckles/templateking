@@ -1,4 +1,4 @@
-var templates = require('../')({directory: 'examples/public'})
+var templates = require('../')({directory:'examples/public'})
 var http = require('http')
 var ecstatic = require('ecstatic')(__dirname + '/public')
 var hscript = require('virtual-dom/h')
@@ -8,7 +8,7 @@ http.createServer(function (request, response) {
         var message = 'Hello template!'
         templates(
             ['main.html', 'message.html'],
-            {'#message': message, '#datetime': Date()},
+            {'#message':message, '#datetime':Date()},
             response
         )
     }
@@ -27,7 +27,7 @@ http.createServer(function (request, response) {
                 'head': {_mapappend: {
                     'link': [{'link':{href:'/css/section.css'}}]
                 }},
-                '#sectionheader': 'Section!', '#message': message, '#datetime': Date(),
+                '#sectionheader':'Section!', '#message':message, '#datetime':Date(),
                 '#scripts': {_mapprepend: {
                     'script': [
                         {'script':{src:undefined, _html:'console.log("message loaded")'}},

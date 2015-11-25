@@ -81,6 +81,7 @@ Will output:
     </body>
 </html>
 ```
+(Layout reformated for clarity.)
 
 See [the examples directory](https://github.com/bloodyKnuckles/templateking/tree/master/examples)
 for more examples and additional functionality.
