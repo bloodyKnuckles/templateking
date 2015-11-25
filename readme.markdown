@@ -84,7 +84,8 @@ Will output:
 (Layout reformated for clarity.)
 
 See [the examples directory](https://github.com/bloodyKnuckles/templateking/tree/master/examples)
-for more examples and additional functionality.
+for more examples and additional functionality, including grabbing a portion of a template and
+repeatedtly writing it out to form table rows and lists.
 
 ## license
 
