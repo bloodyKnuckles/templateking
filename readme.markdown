@@ -1,6 +1,9 @@
 # templateking
+Nested templates that use CSS selectors to populate dynamic data points.
 
-Nested templates that use CSS selectors to populate dynamic data points. 
+(Intended for server-side use. For a similar client-side library see
+[shave-template](https://www.npmjs.com/package/shave-template) or 
+[curly-free-template](https://www.npmjs.com/package/curly-free-template).)
 
 This module allows you to develop plain HTML/CSS templates with dummy data in the places dynamic
 data will be inserted. The benefit is that the templates can be developed independently from the
