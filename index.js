@@ -7,7 +7,7 @@ var str = require('string-to-stream')
 module.exports = function (opts) {
     opts = opts || {}
     opts.directory = opts.directory || './'
-    
+console.log(opts.directory)    
     return function (templates, pagevars, response) {
     looptemplates(templates)
         .pipe(hstream(procpagevars(pagevars)))
