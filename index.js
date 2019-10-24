@@ -1,6 +1,6 @@
 var fs = require('fs')
 var path = require('path')
-var hstream  = require('hyperstream')
+var hstream  = require('./hstream')
 var createElement = require('virtual-dom/create-element')
 var str = require('string-to-stream')
 

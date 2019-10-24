@@ -21,9 +21,15 @@
   "readmeFilename": "readme.markdown",
   "license": "MIT",
   "dependencies": {
-    "hyperstream": "^1.2.2",
     "string-to-stream": "^3.0.1",
-    "virtual-dom": "^2.1.1"
+    "virtual-dom": "^2.1.1",
+    "concat-stream": "^2.0.0",
+    "through2": "^3.0.1",
+    "trumpet": "^1.7.2",
+    "ent": "^2.0.0",
+    "utf8-stream": "~0.0.0",
+    "stream-combiner2": "~1.1.1",
+    "combine-streams": "^1.0.0"
   },
   "devDependencies": {
     "ecstatic": "^4.1.2"
